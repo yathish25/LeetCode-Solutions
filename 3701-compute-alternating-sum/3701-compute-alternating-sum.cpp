@@ -5,7 +5,7 @@ public:
      if(n == 1) return nums[0];
 
      for(int i= 0;i<n;i+=2){
-        if(i == n) continue;
+        if(i == n-1) continue;
         total += (nums[i] - nums[i+1]);
      } 
      if(n % 2 == 1) total += nums[n-1];
